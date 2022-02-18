@@ -6,7 +6,11 @@ const imageArray = [
     "https://live.staticflickr.com/2907/14540681468_505cb2306a_o_d.jpg",
     "https://live.staticflickr.com/3851/14704349886_e66dda3bdb_o_d.jpg",
     "https://live.staticflickr.com/3870/14727498565_3214dbf470_o_d.jpg",
-    "https://live.staticflickr.com/8784/17000955848_8fb87a98be_o_d.jpg"
+    "https://live.staticflickr.com/8784/17000955848_8fb87a98be_o_d.jpg",
+    "https://live.staticflickr.com/5585/14541065807_021eb67983_o_d.jpg",
+    "https://live.staticflickr.com/5579/13973812419_394684b310_o_d.jpg",
+    "https://live.staticflickr.com/4075/4883514308_59bc921c9e_o_d.jpg",
+    "https://live.staticflickr.com/4103/4993531707_47a2faf50c_o_d.jpg"
 ];
 
 const image = document.querySelector("img");
@@ -19,4 +23,6 @@ button.addEventListener("click", () => generateRandomPicture(imageArray));
 function generateRandomPicture(array){
 	let randomNum = Math.floor(Math.random() * array.length); 
 	image.setAttribute("src", array[randomNum]);
+    image.style.width = '1000px';
+    image.style.height = 'auto';
 }

@@ -1,21 +1,12 @@
-html, body {
-	margin: 0;
-	height: 100%;
-	width: 100%;
+body{
+    background-color: black;
 }
-
-header {
-	width: 100%;
-	padding-bottom: 25px;
-	flex-direction: column;
-}
-
-img {
-	width: 70%;
-}
-
-.flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.Knop{
+    position: absolute;
+      left: 1010px;
+     top: 5px;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    text-align: center;
 }
